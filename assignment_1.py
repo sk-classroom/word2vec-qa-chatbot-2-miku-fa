@@ -26,7 +26,7 @@ ans_vec = vector['y']
 
 # load th trained word2vec model 
 # Hint: You should use the word2vec model pre-trained with both question and answer sets.
-trained_w2v = gensim.models.Word2Vec.load("/workspaces/word2vec-qa-chatbot-2-miku-fa/data/w2v-advance.modelad")
+trained_w2v = gensim.models.Word2Vec.load("/workspaces/word2vec-qa-chatbot-2-miku-fa/data/w2v-advance.model")
 
 
 # App title
