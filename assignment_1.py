@@ -54,7 +54,7 @@ def trained_sentence_vec(sent):
     qu_voc = [tm for tm in sent if tm in trained_w2v.wv]
     # Get the embedding of the characters
     # Hint: Stack arrays in sequence vertically using np.vstack
-    emb = np.vstack([trained_w2v.wv[tm] for tm in sent if tm in trained_w2v.wv])
+    emb = np.vstack([trained_w2v.wv[tm] for tm in sent if tm in qu_voc])
     # Calculate the arithmetic mean for the vectors of each included word along the column 
     # to get the vector of the question
     ave_vec = np.mean(emb, axis=0)
